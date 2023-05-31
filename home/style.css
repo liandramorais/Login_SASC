@@ -1,0 +1,158 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --verde_1:#91d99c;
+    --verde_2:#aed9a7;
+    --cinza:#8f8f8f;
+    --rosa:#d99a9a;
+    --preto:#000000;
+    --branco1:#f2f2f2;
+    --branco2: #f4f4f4;
+    --font1: 'ABeeZee', sans-serif;
+    --font2: 'Titillium Web', sans-serif;
+}
+
+.cabecalho{
+    background-color: #000000;
+    width: 1700px auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho img{
+    width: 80px;
+}
+
+.logo{
+    height: 90%;
+}
+
+label {position: relative ;
+    width: 80px ;
+    height: 40px;
+    cursor: pointer;
+}
+
+label input {
+    position: relative;
+    z-index: 1;
+    appearance: none;
+}
+
+label span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: green;
+    border-radius: 80px;
+    transition: 0,5s;
+}
+
+label input:checked ~ span{
+    background: #CF4B83;
+}
+
+label span i {
+    transition: 0,5s;
+    top: 1px;
+    left: 1px;
+    position: absolute;
+    width: 50%;
+    height: 90%;
+    background: white;
+    ;
+    border-radius: 50%;
+}
+
+label input:checked ~ span i {
+    left: 19px;
+}
+
+.login{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h2{
+    color: var(--verde_1);
+    font-size: 36px;
+    text-align: center;
+}
+
+.login p{
+    color: var(--cinza);
+}
+
+.label-input{
+    display: flex;
+    flex-direction: column;
+}
+   
+.usuario{
+    background-color: var(--verde_2);
+    font-family: var(--font2);
+    font-size: 18px;
+    text-align: center;
+    margin: 30px;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+}
+
+.senha{
+    background-color: var(--verde_2);
+    font-family: var(--font2);
+    font-size: 18px;
+    text-align: center;
+    margin: 30px;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+}
+
+button{
+    background-color: var(--verde_1);
+    font-family: var(--font2);
+    padding: 5px 15px;
+    border:none;
+    border-radius: 8px;
+    width: 120px;
+    color: var(--branco1);
+    display: flex;
+    align-items: center;
+
+}
+
+.login form{
+    width: 50%;
+    height:450px;
+    padding: 60px;
+    border-radius: 30px;
+    background-color: var(--branco2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.banner {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
